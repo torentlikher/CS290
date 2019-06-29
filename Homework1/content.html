@@ -2,16 +2,22 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="stylesheet.css">
         <title>Orentlikher Tim CS290 HW1</title>
     </head>
 <body>
+    <p>1. 6x6 Table w/Extra Credit:</p>
     <table>
-        <caption>1st and 2nd Basemen for the Yankees and Red Sox</caption>
+        <caption>Infielders for some baseball teams</caption>
         <thead>
             <tr>
                 <th></th>
                 <th>Yankees</th>
                 <th>Red Sox</th>
+                <th>Mets</th>
+                <th>Dodgers</th>
+                <th>Astros</th>
+
             </tr>
         </thead>
         <tbody>
@@ -19,13 +25,133 @@
                 <td><em>1B</em></td>
                 <td>Luke Voit</td>
                 <td>Michael Chavis</td>
+                <td>Pete Alonso</td>
+                <td>Joe Pederson</td>
+                <td>Tyler White</td>
             </tr>
             <tr>
                 <td><em>2B</em></td>
                 <td>Gleyber Torres</td>
                 <td>Brock Holt</td>
+                <td>Robinson Cano</td>
+                <td>Max Muncy</td>
+                <td>Jose Altuve</td>
             </tr>
+            <tr>
+                <td><em>3B</em></td>
+                <td>DJ LeMahieu</td>
+                <td>Rafael Devers</td>
+                <td>Todd Frazier</td>
+                <td>Justin Turner</td>
+                <td>Yuli Gurriel</td>
+            </tr>
+            <tr>
+                <td><em>SS</em></td>
+                <td>Didi Gregorious</td>
+                <td>Xander Bogaerts</td>
+                <td>Amed Rosario</td>
+                <td>Chris Taylor</td>
+                <td>Alex Bregman</td>
+            </tr>
+            <tr>
+                <td><em>C</em></td>
+                <td>Gary Sanchez</td>
+                <td>Christian Vazquez</td>
+                <td>Wilson Ramos</td>
+                <td>Austin Barnes</td>
+                <td>Robinson Chirinos</td>
+            </tr>
+            <tfoot>
+                <tr>
+                    <td colspan="2">this spans 2 columns</th>
+                    <td colspan="4">this spans 4 columns</th>
+                </tr>
+            </tfoot>
         </tbody>
     </table>
+
+    <br>
+    <br>
+
+    <p>2. List:</p>
+    <p>Yankees Starting Pitchers:</p>
+    <ol>
+        <li>Masahiro Tanaka</li>
+        <li>James Paxton</li>
+        <li>JA Happ</li>
+        <li>CC Sabathia</li>
+    </ol>
+
+    <br>
+    <p>Red Sox Starting Pitchers</p>
+    <ol>
+        <li>Chris Sale</li>
+        <li>David Price</li>
+        <li>Rick Porcello</li>
+        <li>Eduardo Rodriguez</li>
+        <li>Brian Johnson</li>
+    </ol>
+
+    <br>
+    <p>3. Div</p>
+    <div class="outer-content">
+        <p>outer div</p>
+        <div class="inner-content">
+            <p>inner div</p>
+        </div>
+    </div>
+
+    <br>
+    <p>4. Forms</p>
+    <p>This Form submits via POST:</p>
+    <form action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" method="POST">
+        <label for="text_input">Text Input:</label>
+        <input type="text" id="text_input" name="text_input">
+        <br>
+        <label for="numerical_input">Numerical Input:</label>
+        <input type="numerical" id="numerical_input" name="numerical_input">
+        <br>
+        <label for="password_input">Password Input:</label>
+        <input type="password" id="password_input" name="password_input">
+        <br>
+        <p>Radio Buttons:</p>
+        <label for="snickers">Snickers</label>
+        <input type="radio" id="snickers" name="candy" value="snickers">
+        <br>
+        <label for="skittles">Skittles</label>
+        <input type="radio" id="skittles" name="candy" value="skittles">
+        <br>
+        <label for="mentos">Mentos</label>
+        <input type="radio" id="mentos" name="candy" value="mentos">
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <br>
+
+    <p>This Form submits via GET:</p>
+    <form action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" method="GET">
+        <label for="text_input">Text Input:</label>
+        <input type="text" id="text_input" name="text_input">
+        <br>
+        <label for="numerical_input">Numerical Input:</label>
+        <input type="numerical" id="numerical_input" name="numerical_input">
+        <br>
+        <label for="password_input">Password Input:</label>
+        <input type="password" id="password_input" name="password_input">
+        <br>
+        <p>Radio Buttons:</p>
+        <label for="snickers">Snickers</label>
+        <input type="radio" id="snickers" name="candy" value="snickers">
+        <br>
+        <label for="skittles">Skittles</label>
+        <input type="radio" id="skittles" name="candy" value="skittles">
+        <br>
+        <label for="mentos">Mentos</label>
+        <input type="radio" id="mentos" name="candy" value="mentos">
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+
 </body>
 </html>

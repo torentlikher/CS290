@@ -1,0 +1,40 @@
+.inner-content {
+    width:  75%;
+    background-color: #1E90FF;
+    text-align: center;
+    display: inline-block;
+}
+
+.outer-content {
+    width:  75%;
+    margin: 20px;
+    padding: 20px;
+    background-color: #FF1493;
+    text-align: center;
+}
+
+table, th, td{
+    border: 1px solid black;
+}
+
+table thead th{
+    background-color: #FFFFFF;
+}
+
+table tfoot td{
+    background-color: #FFFFFF;
+}
+
+table tr:nth-of-type(even){
+    background-color: #2F4F4F;
+    color: #FFFFFF;
+}
+
+table tr:nth-of-type(odd){
+    background-color: #A9A9A9;
+}
+
+
+
+
+
