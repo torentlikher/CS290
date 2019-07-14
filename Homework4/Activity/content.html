@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Orentlikher Tim CS290 HW4</title>
+    </head>
+    
+    <body>
+        <script src="script.js"></script>
+
+        <p>Open Weather Map</p>
+        <form>
+            <fieldset>
+                <label for="text_input">City/ZIP Code:</label>
+                <input type="text" id="text_input" name="text_input"> 
+                <br>
+                <input type="submit" value="Submit" id="submit">
+            </fieldset>
+        </form>
+
+        <br>
+        
+        <table>
+            <tr>
+                <th>Metric</th>
+                <th>Result</th>
+            </tr>
+            <tr>
+                <td>City</td>
+                <td id="cityOutput"></td>
+            </tr>
+            <tr>
+                <td>Temp</td>
+                <td id="tempOutput"></td>
+            </tr>
+            <tr>
+                <td>Conditions</td>
+                <td id="descOutput"></td>
+            </tr>
+            <tr>
+                <td>Humidity</td>
+                <td id="humidityOutput"></td>
+            </tr>
+        </table>
+
+        <br>
+
+        <p>httpbin.org</p>
+        <form>
+            <fieldset>
+                <label for="input2">Input:</label>
+                <input type="text" id="input2" name="input2"> 
+                <br>
+                <input type="submit" value="Submit" id="HTTPbinSubmit">
+            </fieldset>
+        </form>
+        <br>
+        <table>
+            <tr>
+                <td>Your Input:</td>
+                <td id="output"></td>
+            </tr>
+        </table>
+
+        
+
+    </body>
+</html>
