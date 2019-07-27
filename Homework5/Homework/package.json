@@ -1,0 +1,15 @@
+{
+  "name": "get_post_checker",
+  "version": "1.0.0",
+  "description": "Uses handlebars and express to process get and post requests",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tim Orentlikher",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "handlebars": "^4.1.2"
+  }
+}
