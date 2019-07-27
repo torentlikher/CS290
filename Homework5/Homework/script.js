@@ -38,6 +38,8 @@ app.get('/', function(req, res){
     qParams += '.';
     var context = {};
     context.dataList = qParams;
+    console.log(qParams);
+    console.log(context);
     res.render('get-loopback', context);
 });
 
