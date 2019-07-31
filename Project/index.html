@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Orentlikher Tim CS290 Final Project</title>
+        
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="hobbies.html">Hobbies</a>
+            <a href="travel.html">Travel</a>
+            <a href="contact.html">Contact Me</a>
+        </nav>
+
+        
+        <br>
+        <div class="container">
+            <div class="header">
+                <h1>Welcome to my webpage!</h1>
+                <p>This page serves as the final project for CS290</p>
+                <br>
+                <br>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <div id="Hobbies" onclick="location.href='hobbies.html'">Hobbies</div>
+                    <p>Hobbies</p>
+                </div>
+                <div class="column">
+                    <div id="Travel" onclick="location.href='travel.html'">Travel</div>
+                    <p>Travel</p>
+                </div>
+                <div class="column">
+                    <div id="Contact" onclick="location.href='contact.html'">Contact Me</div>
+                    <p>Contact Me</p>
+                </div>
+            </div>
+        </div>
+        <br>
+        
+        <div class="carousel">
+            <div class="interests">Things that interest me:</div>
+            <img class="left-arrow" id="prev-button" src="images/arrow-left-solid.svg"></img>
+            <img class="right-arrow" id="next-button" src="images/arrow-right-solid.svg"></img>
+            <div class="carousel-slide">
+                <img src="images/carousel/image4.jpg" id="lastClone">
+                <img src="images/carousel/image1.jpg">
+                <img src="images/carousel/image2.jpg">
+                <img src="images/carousel/image3.jpg">
+                <img src="images/carousel/image4.jpg">
+                <img src="images/carousel/image1.jpg" id="firstClone">
+            </div>
+        </div>
+
+        <br>
+        
+        <div class="container">Some of my favorite links from around the interwebs:
+            <div class="scrollbox">
+                <ul>
+                    <li><a href="htts://fivethirtyeight.com.">FiveThirtyEight</a></li>
+                    <li><a href="https://datavizproject.com/">Data Viz Project</a></li>
+                    <li><a href="https://www.kaggle.com/">Kaggle</a></li>
+                    <li><a href="https://blog.crossjoin.co.uk/">Chris Webb's BI Blog</a></li>
+                    <li><a href="https://www.datacamp.com/">DataCamp</a></li>
+                    <li><a href="https://towardsdatascience.com/">TowardsDataScience</a></li>
+                    <li><a href="https://www.kdnuggets.com/">KDnuggets</a></li>
+                    <li><a href="https://www.allendowney.com/blog/">Allen Downey's Blog</a></li>
+                    <li><a href="https://powerbi.microsoft.com/en-us/">Microsoft Power BI</a></li>
+                    <li><a href="https://powerpivotpro.com/">PowerPivotPro</a></li>
+                    <li><a href="https://www.sqlbi.com/">SQL BI</a></li>
+                    <li><a href="https://dssg.uchicago.edu/">Data Science for Social Good</a></li>
+                    <li><a href="https://simplystatistics.org/">Simply Stats</a></li>
+                    <li><a href="https://dataconomy.com/">Dataconomy</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="container">
+            <footer>Vector Icons from: flaticon.com</footer>
+        </div>
+        <script src="script.js"></script>
+        
+    </body>
+</html>

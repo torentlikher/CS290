@@ -2,7 +2,9 @@
 
 <p>You passed in:</p>
 <ul>
-    {{#each param}}
-    <li>{{this.name}}: {{this.value}}</li>
+    {{#each dataList}}
+    <li>
+        <strong>{{this.key}}</strong> = {{this.value}}
+    </li>
     {{/each}}
 </ul>

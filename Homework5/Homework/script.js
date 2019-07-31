@@ -15,13 +15,10 @@ app.listen(2565);
 app.post('/', function(req, res){
     console.log('post route');
     var qParams = [];
-    for (var p in req.body){
-      qParams.push({'name':p,'value':req.body[p]})
+    for (var p in req.query){
+      qParams.push({'key':p,'value':req.query[p]})
     }
-    console.log('printing qParams');
-    console.log(qParams);
-    console.log('printing req.body');
-    console.log(req.body);
+
     var context = {};
     context.dataList = qParams;
     res.render('post-loopback', context);
@@ -29,26 +26,17 @@ app.post('/', function(req, res){
 
 app.get('/', function(req, res){
     console.log('get route');
-    var qParams = '';
+    var qParams = [];
     for(var p in req.query){
-        qParams += 'The name ' + p + ' contains ' + req.query[p] + ', ';
+        qParams.push({'key':p, 'value':req.query[p]})
     }
 
-    qParams = qParams.substring(0, qParams.lastIndexOf(','));
-    qParams += '.';
     var context = {};
     context.dataList = qParams;
-    console.log(qParams);
-    console.log(context);
     res.render('get-loopback', context);
 });
 
 app.use(function(req, res){
     res.status(404);
     res.render('404')
-});
-
-app.use(function(req, res){
-    res.status(500);
-    res.render('500')
 });
