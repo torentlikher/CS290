@@ -4,26 +4,31 @@
     text-align: center;
 }
   
-.row::after {
+.row{
     content: "";
     clear: both;
     display: table;
     width:100%;
     margin:0 auto;
+    opacity: 0.0;
+    transition: 4s;
 }
 
 .header{
-    text-align: center
+    text-align: center;
+    opacity: 0.0;
+    transition: 2s;
 }
 
 .content{
     width: 75%;
     margin:0 auto;
 }
+
 #Travel{
     content: url('images/around.png');
-    height:128px;
-    width:128px;
+    height:30%;
+    width:30%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -35,8 +40,8 @@
 
 #Contact{
     content: url('images/email.png');
-    height:128px;
-    width:128px;
+    height:30%;
+    width:30%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -48,8 +53,8 @@
 
 #Hobbies{
     content: url('images/hoop\ \(1\).png');
-    height:128px;
-    width:128px;
+    height:30%;
+    width:30%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -115,7 +120,7 @@ a:hover{
 
 body{
     font-family: Georgia, 'Times New Roman', Times, serif;
-    letter-spacing: -1.4px;
+    letter-spacing: -1.0px;
     background-image: linear-gradient(to top, #6a85b6 0%, #bac8e0 100%);
 }
 
@@ -157,6 +162,6 @@ body{
 
 .scrollbox{
     overflow:auto;
-    height: 250px;
+    height: 200px;
     width: 500px;
 }

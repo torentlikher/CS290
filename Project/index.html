@@ -19,13 +19,13 @@
         
         <br>
         <div class="container">
-            <div class="header">
+            <div class="header" id="header">
                 <h1>Welcome to my webpage!</h1>
                 <p>This page serves as the final project for CS290</p>
                 <br>
                 <br>
             </div>
-            <div class="row">
+            <div class="row" id="icons">
                 <div class="column">
                     <div id="Hobbies" onclick="location.href='hobbies.html'">Hobbies</div>
                     <p>Hobbies</p>
@@ -59,22 +59,25 @@
         <br>
         
         <div class="container">Some of my favorite links from around the interwebs:
+            <br>
+            <input type="button" value="Sort!" id="sortButton">
+            <br>
             <div class="scrollbox">
-                <ul>
-                    <li><a href="htts://fivethirtyeight.com.">FiveThirtyEight</a></li>
-                    <li><a href="https://datavizproject.com/">Data Viz Project</a></li>
-                    <li><a href="https://www.kaggle.com/">Kaggle</a></li>
-                    <li><a href="https://blog.crossjoin.co.uk/">Chris Webb's BI Blog</a></li>
-                    <li><a href="https://www.datacamp.com/">DataCamp</a></li>
-                    <li><a href="https://towardsdatascience.com/">TowardsDataScience</a></li>
-                    <li><a href="https://www.kdnuggets.com/">KDnuggets</a></li>
-                    <li><a href="https://www.allendowney.com/blog/">Allen Downey's Blog</a></li>
-                    <li><a href="https://powerbi.microsoft.com/en-us/">Microsoft Power BI</a></li>
-                    <li><a href="https://powerpivotpro.com/">PowerPivotPro</a></li>
-                    <li><a href="https://www.sqlbi.com/">SQL BI</a></li>
-                    <li><a href="https://dssg.uchicago.edu/">Data Science for Social Good</a></li>
-                    <li><a href="https://simplystatistics.org/">Simply Stats</a></li>
-                    <li><a href="https://dataconomy.com/">Dataconomy</a></li>
+                <ul id="unorderedList">
+                    <li><a data-name="fivethirtyeight" href="https://fivethirtyeight.com/">FiveThirtyEight</a></li>
+                    <li><a data-name="datavizproject" href="https://datavizproject.com/">Data Viz Project</a></li>
+                    <li><a data-name="kaggle" href="https://www.kaggle.com/">Kaggle</a></li>
+                    <li><a data-name="chriswebbbiblog" href="https://blog.crossjoin.co.uk/">Chris Webb's BI Blog</a></li>
+                    <li><a data-name="datacamp" href="https://www.datacamp.com/">DataCamp</a></li>
+                    <li><a data-name="towardsdatascience" href="https://towardsdatascience.com/">TowardsDataScience</a></li>
+                    <li><a data-name="kdnuggets" href="https://www.kdnuggets.com/">KDnuggets</a></li>
+                    <li><a data-name="allendowneybiblog" href="https://www.allendowney.com/blog/">Allen Downey's Blog</a></li>
+                    <li><a data-name="microsoftpowerbi" href="https://powerbi.microsoft.com/en-us/">Microsoft Power BI</a></li>
+                    <li><a data-name="powerpivotpro" href="https://powerpivotpro.com/">PowerPivotPro</a></li>
+                    <li><a data-name="sqlbi" href="https://www.sqlbi.com/">SQL BI</a></li>
+                    <li><a data-name="datascienceforsocialgood" href="https://dssg.uchicago.edu/">Data Science for Social Good</a></li>
+                    <li><a data-name="simplystats" href="https://simplystatistics.org/">Simply Stats</a></li>
+                    <li><a data-name="dataconomy" href="https://dataconomy.com/">Dataconomy</a></li>
                 </ul>
             </div>
         </div>
@@ -84,6 +87,7 @@
         <div class="container">
             <footer>Vector Icons from: flaticon.com</footer>
         </div>
+
         <script src="script.js"></script>
         
     </body>
